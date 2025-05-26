@@ -1,0 +1,12 @@
+**/venv/
+*.pyc
+**/__pycache__/
+.env
+.env**
+.venv
+.data
+.idea
+.zed
+.vscode
+.env
+*~

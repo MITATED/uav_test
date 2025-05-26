@@ -1,0 +1,15 @@
+services:
+  application:
+    container_name: uav
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: base
+    volumes:
+      - ./app:/workspace/app
+    env_file:
+      - .env
+    command: python run.py
+
+
